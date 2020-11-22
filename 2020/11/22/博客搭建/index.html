@@ -3,8 +3,8 @@
 
 
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="咋用hexo+github搭建一个博客, Hexo">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <meta name="keywords" content="hexo+github搭建博客, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>咋用hexo+github搭建一个博客 | Hexo</title>
+    <title>hexo+github搭建博客 | Hexo</title>
     <link rel="icon" type="image/png" href="/hckun.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/hckun.github.io/libs/awesome/css/all.css">
@@ -29,13 +29,23 @@
 
     <script src="/hckun.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+<meta name="generator" content="Hexo 5.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://backiee.com/static/wpdb/wallpapers/1000x563/221390.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
 <body>
-    <header class="navbar-fixed">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
@@ -310,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/hckun.github.io/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/hckun.github.io/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">咋用hexo+github搭建一个博客</h1>
+                    <h1 class="description center-align post-title">hexo+github搭建博客</h1>
                 </div>
             </div>
         </div>
@@ -460,7 +470,59 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>操作在命令行cmd里或者在git bash here进行都可，本文在命令行中进行。</p>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>百度直接搜索node.js，选择长期支持版，安装选项一路默认</p>
+<p>打开命令行，输入<code>node -v</code>和<code>npm -v</code>，如果出现版本号，那么就安装成功了。</p>
+<h2 id="换国内源"><a href="#换国内源" class="headerlink" title="换国内源"></a>换国内源</h2><p>命令行输入 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>百度搜索git，一路默认</p>
+<p>安装完成后在命令行中输入<code>git --version</code>验证是否安装成功。</p>
+<p>命令行里输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Github部分"><a href="#Github部分" class="headerlink" title="Github部分"></a>Github部分</h2><p>新建一个仓库，仓库的项目名一定是 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">你的github的用户名.github.io</span><br></pre></td></tr></table></figure>
+
+<p>除了用户名什么都不用写直接创建就ok了。</p>
+<h2 id="开始搭建本地博客"><a href="#开始搭建本地博客" class="headerlink" title="开始搭建本地博客"></a>开始搭建本地博客</h2><p>新建一个文件夹用来存放自己的博客文件</p>
+<p>命令行cd 文件夹地址进入这个文件夹</p>
+<p>输入<code>npm i hexo-cli -g</code>安装Hexo，输入<code>hexo -v</code>验证是否安装成功。</p>
+<p>输入<code>hexo init</code>初始化文件夹。</p>
+<p>如果这个时候hexo init卡在的话，ctrl+z取消，在命令行中输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
+
+<p>然后再重试hexo init，不行就多来几遍。</p>
+<p>好了之后，接着输入<code>npm install</code>安装必备的组件。</p>
+<p>这样本地的网站配置就OK了，命令行中输入<code>hexo g</code>生成静态网页，然后输入<code>hexo s</code>打开本地服务器，然后浏览器打开<a href="https://link.zhihu.com/?target=http://localhost:4000/">http://localhost:4000/</a>，就可以看到我们的博客的样子了。</p>
+<p>按<code>ctrl+c</code>关闭本地服务器。</p>
+<h2 id="连接Github与本地"><a href="#连接Github与本地" class="headerlink" title="连接Github与本地"></a>连接Github与本地</h2><p>命令行cd 进入你的博客文件夹，输入下面命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;你的github用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你绑定的的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>然后生成密钥SSH key（用来连接本地和github的协议）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;你的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>打开<a href="https://link.zhihu.com/?target=http://github.com/">github</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个SSH，名字可以不写也可以随便写。</p>
+<p>命令行中输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>将输出的内容复制到框中，点击确定保存。</p>
+<p>输入<code>ssh -T git@github.com</code>，如果提示  <em>HI，啥啥啥！ you are successfully 巴拉巴拉巴拉巴拉</em> ，那就是成功了。</p>
+<h2 id="配置博客根目录下的-config-yml文件"><a href="#配置博客根目录下的-config-yml文件" class="headerlink" title="配置博客根目录下的_config.yml文件"></a>配置博客根目录下的<code>_config.yml</code>文件</h2><p>修改最后一行的配置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/你的用户名/你的用户名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>修改# URL文件的 中的url 和 root</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url: https:&#x2F;&#x2F;你的用户名.github.io&#x2F; </span><br><span class="line">root: &#x2F;你的用户名.github.io </span><br></pre></td></tr></table></figure>
+
+<h2 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h2><p>命令行cd 进入博客文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &#x2F;&#x2F;清理缓存</span><br><span class="line">hexo g &#x2F;&#x2F;生成静态网页</span><br><span class="line">hexo d &#x2F;&#x2F;上传到github</span><br></pre></td></tr></table></figure>
+
+<p>这样就大功告成！</p>
+
             </div>
             <hr/>
 
@@ -642,7 +704,7 @@
     <div id="rewardModal" class="modal">
         <div class="modal-content">
             <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <h4 class="reward-title">谢谢大哥大姐请我喝饮料</h4>
             <div class="reward-content">
                 <div class="reward-tabs">
                     <ul class="tabs row">
@@ -699,9 +761,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/hckun.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="咋用hexo+github搭建一个博客">
+                        <img src="/hckun.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="hexo+github搭建博客">
                         
-                        <span class="card-title">咋用hexo+github搭建一个博客</span>
+                        <span class="card-title">hexo+github搭建博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -935,9 +997,9 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="503838841"
+                   id="586232743"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
@@ -1089,7 +1151,7 @@ $(function () {
     
 
     
-    <script src="/hckun.github.io/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/hckun.github.io/libs/instantpage/instantpage.js" type="module"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
     
 
 </body>
