@@ -470,7 +470,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    722
+                    850
                 </div>
                 
 
@@ -488,7 +488,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>操作在命令行cmd里或者在git bash here进行都可，本文在命令行中进行。</p>
-<p>如果出现提示找不到啥啥命令自己nmp下载去~</p>
+<p><strong>如果出现提示找不到啥啥命令自己npm下载去<del>（不会就百度找下载命令</del>）</strong></p>
 <h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>百度直接搜索node.js，选择长期支持版，安装选项一路默认</p>
 <p>打开命令行，输入<code>node -v</code>和<code>npm -v</code>，如果出现版本号，那么就安装成功了。</p>
 <h2 id="换国内源"><a href="#换国内源" class="headerlink" title="换国内源"></a>换国内源</h2><p>命令行输入 </p>
@@ -504,8 +504,8 @@
 <h2 id="开始搭建本地博客"><a href="#开始搭建本地博客" class="headerlink" title="开始搭建本地博客"></a>开始搭建本地博客</h2><p>新建一个文件夹用来存放自己的博客文件</p>
 <p>命令行cd 文件夹地址进入这个文件夹</p>
 <p>输入<code>npm i hexo-cli -g</code>安装Hexo，输入<code>hexo -v</code>验证是否安装成功。</p>
-<p>输入<code>hexo init</code>初始化文件夹。</p>
-<p>如果这个时候hexo init卡在的话，ctrl+z取消，在命令行中输入</p>
+<p>输入<code>hexo init</code>初始化文件夹(<strong>输入这个命令后文件夹会多出一些东西。注意：必须是空文件夹才可以初始化，要从来就要把文件夹里的东西删除，查看隐藏文件，有一个git文件会隐藏起来</strong>)。</p>
+<p>如果这个时候hexo init卡在的话（<strong>卡住了文件夹里也会有一些已经下载好的文件，删了，注意那个隐藏的git，漏删了就不是空了</strong>），ctrl+z取消，在命令行中输入</p>
 <pre><code>git config --global --unset http.proxy</code></pre>
 <pre><code>git config --global --unset https.proxy</code></pre>
 <p>然后再重试hexo init，不行就多来几遍。</p>
@@ -513,6 +513,7 @@
 <p>这样本地的网站配置就OK了，命令行中输入<code>hexo g</code>生成静态网页，然后输入<code>hexo s</code>打开本地服务器，然后浏览器打开<a href="https://link.zhihu.com/?target=http://localhost:4000/">http://localhost:4000/</a>，就可以看到我们的博客的样子了。</p>
 <p>按<code>ctrl+c</code>关闭本地服务器。</p>
 <h2 id="连接Github与本地"><a href="#连接Github与本地" class="headerlink" title="连接Github与本地"></a>连接Github与本地</h2><p>命令行cd 进入你的博客文件夹，输入下面命令：</p>
+<p><strong>双引号不用删除哈，下面都是这种写法</strong></p>
 <pre><code class="bash">git config --global user.name &quot;你的github用户名&quot;
 git config --global user.email &quot;你绑定的的邮箱&quot;</code></pre>
 <p>然后生成密钥SSH key（用来连接本地和github的协议）：</p>
@@ -1101,7 +1102,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">797</span>&nbsp;字
+                class="white-color">925</span>&nbsp;字
             
             
             
