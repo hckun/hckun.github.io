@@ -470,7 +470,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    854
+                    866
                 </div>
                 
 
@@ -487,8 +487,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>操作在命令行cmd里或者在git bash here进行都可，本文在命令行中进行。</p>
-<p><strong>如果出现提示找不到啥啥命令自己npm下载去，不会就去百度找下载命令是什么~~~</strong></p>
+                <p><strong>如果出现提示找不到啥啥命令自己npm下载去，不会就去百度找下载命令是什么~~~</strong></p>
 <h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>百度直接搜索node.js，选择长期支持版，安装选项一路默认</p>
 <p>打开命令行，输入<code>node -v</code>和<code>npm -v</code>，如果出现版本号，那么就安装成功了。</p>
 <h2 id="换国内源"><a href="#换国内源" class="headerlink" title="换国内源"></a>换国内源</h2><p>命令行输入 </p>
@@ -518,10 +517,10 @@
 git config --global user.email &quot;你绑定的的邮箱&quot;</code></pre>
 <p>然后生成密钥SSH key（用来连接本地和github的协议）：</p>
 <pre><code class="bash">ssh-keygen -t rsa -C &quot;你的邮箱&quot;</code></pre>
-<p>打开<a href="https://link.zhihu.com/?target=http://github.com/">github</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个SSH，名字可以不写也可以随便写。</p>
-<p>打开你的文件夹，右键git bush here输入</p>
+<p>打开<a href="https://link.zhihu.com/?target=http://github.com/">github</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个SSH，名字可以不写也可以随便写，下面的框先放着，进行下一步。</p>
+<p>打开你的博客文件夹，右键git bush here输入</p>
 <pre><code class="bash">cat ~/.ssh/id_rsa.pub</code></pre>
-<p>将输出的内容复制到框中，点击确定保存。</p>
+<p>将输出的内容复制到githubssh的框中，点击确定保存。</p>
 <p>输入<code>ssh -T git@github.com</code>，如果提示  <em>HI，啥啥啥！ you are successfully 巴拉巴拉巴拉巴拉</em> ，那就是成功了。</p>
 <h2 id="配置博客根目录下的-config-yml文件"><a href="#配置博客根目录下的-config-yml文件" class="headerlink" title="配置博客根目录下的_config.yml文件"></a>配置博客根目录下的<code>_config.yml</code>文件</h2><p>修改最后一行的配置：</p>
 <pre><code class="bash">deploy:
@@ -535,7 +534,7 @@ root: /你的用户名.github.io </code></pre>
 <pre><code>hexo clean //清理缓存
 hexo g //生成静态网页
 hexo d //上传到github</code></pre>
-<p>这样就大功告成！</p>
+<p>这样就大功告成！网页输入https://你的用户名.github.io/就可以进入你的博客了！ </p>
 
             </div>
             <hr/>
@@ -1115,7 +1114,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">854</span>&nbsp;字
+                class="white-color">866</span>&nbsp;字
             
             
             
