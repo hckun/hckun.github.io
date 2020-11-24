@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>hellothanku</title>
+  
+  <subtitle>~</subtitle>
+  <link href="http://hckun.xyz/atom.xml" rel="self"/>
+  
+  <link href="http://hckun.xyz/"/>
+  <updated>2020-11-23T09:54:18.629Z</updated>
+  <id>http://hckun.xyz/</id>
+  
+  <author>
+    <name>HCKun</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo+github搭建一个博客</title>
+    <link href="http://hckun.xyz/2020/112256819.html"/>
+    <id>http://hckun.xyz/2020/112256819.html</id>
+    <published>2020-11-22T04:29:16.000Z</published>
+    <updated>2020-11-23T09:54:18.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;如果出现提示找不到啥啥命令自己npm下载去，不会就去百度找下载命令是什么~~~&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装Node-js&quot;&gt;&lt;a href=&quot;#安装Node-js&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术性" scheme="http://hckun.xyz/categories/%E6%8A%80%E6%9C%AF%E6%80%A7/"/>
+    
+    
+    <category term="搭建一个博客" scheme="http://hckun.xyz/tags/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
